@@ -36,8 +36,8 @@ class DatabasePool:
                 maxconn=10,  # Máximo de conexiones permitidas
                 host=os.getenv('DB_HOST', 'localhost'),
                 port=os.getenv('DB_PORT', '5432'),
-                database=os.getenv('DB_NAME'),
-                user=os.getenv('DB_USER'),
+                database=db_name,
+                user=db_user,
                 password=os.getenv('DB_PASSWORD')
             )
 

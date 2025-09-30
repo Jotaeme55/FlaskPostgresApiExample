@@ -52,11 +52,11 @@ class Libro:
             return None
         
         return Libro(
-            id=row[0],
-            titulo=row[1],
-            isbn=row[2],
-            anio_publicacion=row[3],
-            autor_id=row[4]
+            id=row["id"],
+            titulo=row["titulo"],
+            isbn=row["isbn"],
+            anio_publicacion=row["anio_publicacion"],
+            autor_id=row["autor_id"]
         )
     
     def __repr__(self) -> str:

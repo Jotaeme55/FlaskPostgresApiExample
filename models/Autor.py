@@ -53,10 +53,10 @@ class Autor:
             return None
         
         return Autor(
-            id=row[0],
-            nombre=row[1],
-            nacionalidad=row[2],
-            fecha_nacimiento=row[3]
+            id=row['id'],
+            nombre=row['nombre'],
+            nacionalidad=row['nacionalidad'],
+            fecha_nacimiento=row['fecha_nacimiento']
         )
     
     def __repr__(self) -> str:
